@@ -17,6 +17,14 @@ a:hover {
   text-decoration: underline;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -34,14 +42,13 @@ a:hover {
   padding: 30px 0;
 }
 
-.header__logo {
+.header__logo img {
   height: 30px;
   width: 30px;
-  margin-right: 57px;
 }
 
 .header-nav {
-  margin-left: 0;
+  margin-left: 57px;
   margin-right: auto;
 }
 
@@ -146,10 +153,12 @@ a:hover {
 .hero-rating__big {
   font-size: 24px;
   font-weight: 700;
+  margin-right: 6px;
 }
 
 .hero-rating__small {
   font-size: 16px;
+  padding-bottom: 2px;
 }
 
 .hero-player {
@@ -158,4 +167,108 @@ a:hover {
   justify-content: center;
   flex-basis: 50%;
   margin-left: 50px;
+}
+
+.hero-player__btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.hero-player__btn img {
+  height: 100px;
+  width: 100px;
+  transition: .2s ease-out;
+}
+
+.hero-player__btn img:hover {
+  transform: scale(1.07);
+}
+
+.hero-params {
+  margin-top: 68px;
+  padding-top: 50px;
+  padding-bottom: 64px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.hero-params__title {
+  font-size: 16px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.hero-params-date-cards {
+  display: flex;
+  align-items: center;
+}
+
+.hero-params-date__card {
+  height: 90px;
+  width: 90px;
+  padding: 9px 0;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.hero-params-date__card:last-child {
+  margin-right: 0;
+}
+
+.hero-params-date__card:hover {
+  cursor: pointer;
+}
+
+.hero-params-date__mont {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.hero-params-date__date {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.hero-params-date__day {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.hero-params-place__input {
+  height: 60px;
+  width: 470px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 18px;
+  font-size: 16px;
+  margin-top: 13px;
+}
+
+.hero-params-place__input option {
+  color: #000;
+}
+
+.hero-params-time__input {
+  height: 60px;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 18px;
+  font-size: 16px;
+  margin-top: 13px;
+}
+
+.hero-params-time__input option {
+  color: #000;
 }

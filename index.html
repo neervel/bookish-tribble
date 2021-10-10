@@ -14,8 +14,8 @@
     <div class="container">
       <div class="header-block">
         <div class="header-navbar">
-          <a href="./">
-            <img src="./img/logo.svg" alt="Логотип" class="header__logo">
+          <a href="./" class="header__logo">
+            <img src="./img/logo.svg" alt="Логотип">
             </a>
           <nav class="header-nav">
             <ul class="header-nav__list">
@@ -50,7 +50,9 @@
               <p class="hero__text">Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.</p>
             </div>
             <div class="hero-player">
-              <img src="./img/play-btn.svg" alt="play">
+              <button class="hero-player__btn">
+                <img src="./img/play-btn.svg" alt="play">
+              </button>
             </div>
           </div>
           <div class="hero-extra">
@@ -61,9 +63,52 @@
             <div class="hero-rating">
               <img src="./img/imdb.png" alt="Рейтинг IMDb" class="hero-rating__icon">
               <div class="hero-rating-text">
-                <span class="hero-rating__big">9.2</span>
+                <strong class="hero-rating__big">9.2</strong>
                 <span class="hero-rating__small">/ 10</span>
               </div>
+            </div>
+          </div>
+          <div class="hero-params">
+            <div class="hero-params-date">
+              <span class="hero-params__title">Дата</span>
+              <div class="hero-params-date-cards">
+                <div class="hero-params-date__card">
+                  <span class="hero-params-date__mont">АПР</span>
+                  <span class="hero-params-date__date">28</span>
+                  <span class="hero-params-date__day">сб</span>
+                </div>
+                <div class="hero-params-date__card">
+                  <span class="hero-params-date__mont">АПР</span>
+                  <span class="hero-params-date__date">29</span>
+                  <span class="hero-params-date__day">вск</span>
+                </div>
+                <div class="hero-params-date__card">
+                  <span class="hero-params-date__mont">АПР</span>
+                  <span class="hero-params-date__date">30</span>
+                  <span class="hero-params-date__day">пн</span>
+                </div>
+                <div class="hero-params-date__card">
+                  <span class="hero-params-date__mont">АПР</span>
+                  <span class="hero-params-date__date">31</span>
+                  <span class="hero-params-date__day">вт</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-params-place">
+              <span class="hero-params__title">Кинотеатр</span>
+              <select name="cinema" id="cinema" class="hero-params-place__input">
+                <option value="Октябрь, ул. Калужская, 28" selected>Октябрь, ул. Калужская, 28</option>
+                <option value="Сентябрь, ул. Калужская, 1">Сентябрь, ул. Калужская, 1</option>
+                <option value="Космос, ул. Космонавтов, 10">Космос, ул. Космонавтов, 10</option>
+              </select>
+            </div>
+            <div class="hero-params-item">
+              <span class="hero-params__title">Время</span>
+              <select name="time" id="time" class="hero-params-time__input">
+                <option value="14:35" selected>14:35</option>
+                <option value="17:00">17:00</option>
+                <option value="23:55">23:55</option>
+              </select>
             </div>
           </div>
         </div>
