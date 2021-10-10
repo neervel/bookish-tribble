@@ -10,37 +10,66 @@
   <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
 </head>
 <body>
-  <header class="header">
+  <section class="header">
     <div class="container">
       <div class="header-block">
-        <a href="./">
-          <img src="./img/logo.svg" alt="Логотип" class="header__logo">
-          </a>
-        <nav class="header-nav">
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a href="#">Главная</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#">Фильмы</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#">Кинотеатры</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#">События</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#">Поддержка</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-login">
-          <span class="header-login__text">Привет, Мила</span>
-          <img src="./img/person.jpg" alt="Аватар" class="header-login__img">
+        <div class="header-navbar">
+          <a href="./">
+            <img src="./img/logo.svg" alt="Логотип" class="header__logo">
+            </a>
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a href="#">Главная</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#">Фильмы</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#">Кинотеатры</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#">События</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#">Поддержка</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-login">
+            <span class="header-login__text">Привет, Мила</span>
+            <img src="./img/person.jpg" alt="Аватар" class="header-login__img">
+          </div>
         </div>
+        <!-- /.navbar -->
+        <div class="hero">
+          <div class="hero-main">
+            <div class="hero-info">
+              <p class="hero__subtitle">Avengers: Infinity War</p>
+              <h1 class="hero__title">Мстители: война бесконечности</h1>
+              <p class="hero__text">Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.</p>
+            </div>
+            <div class="hero-player">
+              <img src="./img/play-btn.svg" alt="play">
+            </div>
+          </div>
+          <div class="hero-extra">
+            <div class="hero-time">
+              <img src="./img/time.svg" alt="Длительность" class="hero-time__icon">
+              <div class="hero-time__text">240 мин.</div>
+            </div>
+            <div class="hero-rating">
+              <img src="./img/imdb.png" alt="Рейтинг IMDb" class="hero-rating__icon">
+              <div class="hero-rating-text">
+                <span class="hero-rating__big">9.2</span>
+                <span class="hero-rating__small">/ 10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.header-hero -->
       </div>
     </div>
-  </header>
+  </section>
 </body>
 </html>
